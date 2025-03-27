@@ -1,0 +1,18 @@
+# Bỏ qua các file trong thư mục node_modules
+node_modules/
+
+# Bỏ qua thư mục build và dist
+build/
+dist/
+
+# Bỏ qua các file đã được build tự động
+.expo/
+ios/
+android/
+
+# Bỏ qua các file cấu hình không cần định dạng
+*.config.js
+*.config.json
+
+# Nếu bạn có các file minified
+*.min.js

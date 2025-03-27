@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+# Dự án Graduation Project
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Mô tả dự án
 
-## Get started
+- Dự án xây dựng một app mobile với chức năng chấm công và tính lương cho nhân viên.
 
-1. Install dependencies
+## Cài đặt
 
-   ```bash
-   npm install
-   ```
+1. Yêu cầu hệ thống:
 
-2. Start the app
+- NodeJS: v22.12.0
+- Quản lý package: npm (Mặc định khi cài NodeJS)
+- IDE: WebStorm
 
-   ```bash
-    npx expo start
-   ```
+2. Các bước cài đặt:
 
-In the output, you'll find options to open the app in a
+- Clone dự án từ github về máy
+- Cài đặt các package cần thiết: `npm install`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Cách sử dụng
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Truy cập link trên trình duyệt để tải ứng dụng về thiết bị thật hoặc ảo:
+  https://expo.dev/accounts/huynhanh/projects/graduation-project/builds/3f669fcc-8148-40ff-95c0-1237eee13b21
+- Chạy ứng dụng: `npm start`
+- Sử dụng app expo go trên thiết bị di động để quét mã QR và mở ứng dụng
+- Nếu dùng thiết bị ảo thì chạy thiết bị ảo lên và dán link vào trình duyệt để tải và cài đặt ứng dụng vào thiết bị ảo
+  sao đó vào termial dự án ấn `a` để mở ứng dụng
+- Để chạy server json-server: ` npm run json-server`
 
-## Get a fresh project
+## Công nghệ và tài liệu tham khảo
 
-When you're ready, run:
+- Vector Icon: https://icons.expo.fyi/Index
+- Expo: https://docs.expo.dev/
+- Redux: https://redux.js.org/introduction/getting-started
+- React Native Paper: https://callstack.github.io/react-native-paper/docs/components/ActivityIndicator
+- Json-Server: https://www.npmjs.com/package/json-server
 
-```bash
-npm run reset-project
-```
+## Làm việc với Git và Github
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Xem ảnh Flow Git và Github để biết cách làm việc với Git và Github (bắt buộc): các bạn sẽ làm theo Case 2 trong ảnh.
+  ![Git and Github Flow](https://trungquandev.com/wp-content/uploads/2022/03/git-github-flow-mind-map-trungquandev.jpeg)
+- Video hướng dẫn cách làm việc với Git và Github (bắt buộc): https://www.youtube.com/watch?v=swlrBlriFPE&list=PLP6tw4Zpj-RLzH_NrF8j6SvZLuPk6t948&index=4
 
-## Learn more
+## Luu ý khi phát triển
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Dùng Type Script để viết code
+- Dùng Redux để quản lý state
+- Dùng React Native Paper để thiết kế giao diện
+- Dùng Expo để phát triển ứng dụng
+- Vector Icon để sử dụng icon
+- Các thư viện khác sẽ được cập nhật sau
+- Các bạn cần cài đặt các công cụ cần thiết để phát triển ứng dụng
+- Khi cài môt thư viện nào đó dùng cú pháp expo install <tên thư viện> nếu không được thì cài bằng npm install <tên thư viện>
+- Luôn tuân thủ theo quy tắc đặt tên file và thư mục
+- Dùng Json server để tạo server giả lập

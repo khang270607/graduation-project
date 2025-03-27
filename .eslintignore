@@ -1,0 +1,17 @@
+# Bỏ qua thư mục chứa các module bên ngoài
+node_modules/
+
+# Bỏ qua các file build và thư mục dist
+build/
+dist/
+
+# Bỏ qua thư mục .expo chứa các cấu hình Expo
+.expo/
+
+# Bỏ qua thư mục android và ios (nếu dự án của bạn là dự án managed bởi Expo)
+android/
+ios/
+
+# Bỏ qua các file cấu hình mà bạn không muốn lint
+*.config.js
+*.config.json
