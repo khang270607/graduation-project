@@ -19,7 +19,7 @@ export const Colors = {
     text: '#11181C',
 
     // background: Màu nền của ứng dụng.
-    background: '#fff',
+    background: '#f5f5f5',
 
     // tint: Màu tint được dùng cho các hiệu ứng như icon, trạng thái active, hoặc những phần cần nhấn mạnh.
     tint: tintColorLight,
