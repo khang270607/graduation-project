@@ -10,6 +10,8 @@ export default function TabLayout() {
       <Stack.Screen name="add-branch" />
       <Stack.Screen name="add-position" />
       <Stack.Screen name="add-department" />
+      <Stack.Screen name="log-in" options={{ title: 'Đăng nhập' }} />
+      <Stack.Screen name="register" options={{ title: 'Đăng ký' }} />
     </Stack>
   )
 }
