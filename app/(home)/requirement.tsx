@@ -23,6 +23,14 @@ const styles = StyleSheet.create({
   appbar: {
     backgroundColor: Colors.light.background,
     color: '#000',
+
+    // Android: dùng elevation
+    elevation: 5,
+    // iOS: dùng các thuộc tính shadow
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
   },
   appbarContent: {
     color: '#000',

@@ -1,38 +1,58 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, { useState } from 'react'
+import { StyleSheet, View } from 'react-native'
 import CalendarStrip from 'react-native-calendar-strip'
 import moment from 'moment'
 import 'moment/locale/vi'
 
-import { Typography } from '~/constants/Typography'
 import { Colors } from '~/constants/Colors'
 import { UI } from '~/constants/UI'
 
-// Thiết lập locale tiếng Việt react-native-calendar-strip
 moment.locale('vi')
 
 export default function Header() {
+  const [selectedDate, setSelectedDate] = useState(moment())
+
+  // Hàm xử lý khi người dùng chọn một ngày
+  const onDateSelected = (date: any) => {
+    // Nếu người dùng chọn ngày hiện tại thì không làm gì
+    if (date.isSame(moment(), 'day')) {
+      return
+    }
+    setSelectedDate(date)
+  }
+
   return (
     <View style={styles.container}>
       <CalendarStrip
         scrollable
         calendarHeaderFormat="MMM YYYY"
         style={styles.calendarStrip}
-        selectedDate={moment()} // Active mặc định ngày hiện tại
+        selectedDate={selectedDate}
+        onDateSelected={onDateSelected}
         calendarColor={'#fff'}
         calendarHeaderStyle={{ color: '#000', fontSize: 14 }}
-        dateNumberStyle={{ color: 'black', fontSize: 12 }} // Mặc định: màu đen
-        dateNameStyle={{ color: 'black', fontSize: 12 }} // Mặc định: màu đen
+        // Style mặc định cho ngày
+        dateNumberStyle={{ color: 'black', fontSize: 12 }}
+        dateNameStyle={{ color: 'black', fontSize: 12 }}
+        // Khi active (ngày được chọn qua onDateSelected) áp dụng style highlight khác
         highlightDateNumberStyle={{
           color: Colors.light.primary,
           fontSize: 16,
           fontWeight: 'bold',
-        }} // Khi active: màu green
+        }}
         highlightDateNameStyle={{
           color: Colors.light.primary,
           fontSize: 16,
           fontWeight: 'bold',
-        }} // Khi active: màu green
+        }}
+        // Dùng customDatesStyles để luôn active ngày hiện tại với màu riêng (màu đỏ)
+        customDatesStyles={[
+          {
+            startDate: moment(), // ngày hiện tại
+            dateNumberStyle: { color: 'red', fontSize: 16, fontWeight: 'bold' },
+            dateNameStyle: { color: 'red', fontSize: 16, fontWeight: 'bold' },
+          },
+        ]}
         iconContainer={{ flex: 0.1 }}
       />
     </View>
@@ -48,10 +68,5 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 10,
     borderRadius: UI.borderRadius.large,
-  },
-  title: {
-    fontSize: Typography.fontSize.large,
-    fontWeight: 'bold',
-    marginBottom: 5,
   },
 })
