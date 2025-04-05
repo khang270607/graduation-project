@@ -1,6 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, View, Dimensions, ScrollView } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { StyleSheet, View, ScrollView } from 'react-native'
 
 import { Colors } from '~/constants/Colors'
 import Header from '~/app/(components)/Header'
@@ -43,10 +42,10 @@ export default function Index() {
           />
           <Module
             href="/salary"
-            text="Tính lương"
+            text="Phiếu lương"
             hidden
             colorBackgroundIcon={'#FF6633'}
-            icon="currency-usd"
+            icon="file-document-outline"
           />
         </View>
       </ScrollView>

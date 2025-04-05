@@ -10,9 +10,9 @@ import { Link } from 'expo-router'
 export default function Module({
   href = '/',
   text = 'Chưa có nôi dung',
-  color1 = 'red',
-  color2 = 'orange',
-  color3 = 'green',
+  color1 = 'orange',
+  color2 = 'green',
+  color3 = 'red',
   hidden = false,
   icon = 'clipboard-list-outline',
   colorIcon = '#fff',

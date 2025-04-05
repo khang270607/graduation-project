@@ -10,7 +10,7 @@ const tintColorLight = '#0a7ea4'
 export const Colors = {
   light: {
     // primary: Màu chủ đạo của giao diện, thường dùng cho các button, tiêu đề, hay các thành phần cần nhấn mạnh.
-    primary: '#5fbf44',
+    primary: '#1ccc78',
 
     // secondary: Màu phụ, thường dùng cho các chi tiết hoặc background phụ, có độ trong suốt.
     secondary: 'rgba(46,191,204,0.6)',
