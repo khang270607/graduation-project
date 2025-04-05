@@ -6,6 +6,11 @@ export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Trang người dùng</Text>
+      <TouchableOpacity style={styles.button}>
+        <Link href="/user/create-business" style={styles.buttonText}>
+          Tạo doanh nghiệp
+        </Link>
+      </TouchableOpacity>
     </View>
   )
 
