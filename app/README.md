@@ -7,5 +7,6 @@
 - **Ví dụ:**
   - Bạn có thể có các file như `index.tsx`, `about.tsx` hoặc các thư mục nhóm (ví dụ: `(tabs)`) chứa các route con.
 - **Lệnh cài đặt** 'npm install @react-native-picker/picker'
+- 'npm install react-native-dropdown-select-list'
 - - **Lệnh cài thư viện:**
 - Sử dụng `npm install @react-native-picker/picker @react-native-community/datetimepicker` để cài đặt các thư viện cần thiết.
