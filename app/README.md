@@ -9,4 +9,6 @@
 - **Lệnh cài đặt** 'npm install @react-native-picker/picker'
 - 'npm install react-native-dropdown-select-list'
 - - **Lệnh cài thư viện:**
+- npm uninstall @react-navigation/native @react-navigation/stack react-native-screens react-native-safe-area-context
+- npm install expo-router react-native-paper @expo/vector-icons react-native-dropdown-select-list
 - Sử dụng `npm install @react-native-picker/picker @react-native-community/datetimepicker` để cài đặt các thư viện cần thiết.
